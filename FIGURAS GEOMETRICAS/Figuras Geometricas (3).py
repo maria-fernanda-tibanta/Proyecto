@@ -77,6 +77,19 @@ def eneagono():
      print("El perimetro del eneagono es: ",pen)
      aen=(pen*apotema)/2
      print("El area del eneagono es: ",round(aen,2))
+
+
+def decagono():
+    print("El numero de lados pertence a un decagono")
+    print ("Perimetro del pentagono")
+    l=int(input("Ingrese el valor del lado del decagono: "))
+    perimetro=l*10
+    print ("Perimetro igual a: ", perimetro)
+    print ("\n")
+    print ("Area del pentagono")
+    ap=int(input("Ingrese el valor del apotema del decagono: "))
+    area=(perimetro*ap)/2
+    print ("Area igual a: ", area)
     
 def figuras ():
     if (n==3):
@@ -93,6 +106,8 @@ def figuras ():
         octogono()
     elif n==9:
         eneagono()
+    elif n==10:
+        decagono()
 
 
 figuras()
